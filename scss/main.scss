@@ -1,0 +1,30 @@
+@import "./resets";
+@import "./variables";
+body {
+  background-color: $neutral-color-1;
+  font-family: $ff-base;
+  height: 100vh;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1rem;
+}
+header {
+  padding: 2em;
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo figure {
+    width: 40%;
+  }
+  .logo button {
+    background-color: $neutral-color-1;
+    border-color: $primary-color-1;
+    border-radius: 50em;
+    padding: 0.15em;
+    width: 8em;
+  }
+  h1 {
+    line-height: 1;
+  }
+}
