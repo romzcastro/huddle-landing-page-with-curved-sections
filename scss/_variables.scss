@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 $primary-color-1: hsl(322, 100%, 66%);
 $primary-color-2: hsl(321, 100%, 78%);
 $primary-color-3: hsl(0, 100%, 63%);
@@ -7,8 +10,8 @@ $secondary-color-2: hsl(207, 100%, 98%);
 
 $neutral-color-1: hsl(0, 0%, 100%);
 
-$ff-accent: ("Poppins, sans-serif ");
-$ff-base: ("Open Sans, sans-serif");
+$ff-accent: "Poppins", sans-serif;
+$ff-base: "Open Sans", sans-serif;
 
 $font-weights: (
   "regular": 400,

@@ -13,6 +13,7 @@ header {
   .logo {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 2em;
   }
   .logo figure {
     width: 40%;
@@ -25,6 +26,7 @@ header {
     width: 8em;
   }
   h1 {
+    font-family: $ff-accent;
     line-height: 1;
   }
 }
