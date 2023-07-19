@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="stylesheet" href="./images/favicon-32x32.png" class="icon" />
-
     <link rel="stylesheet" href="./dist/css/main.css" />
     <!-- stylesheet -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="favicon-32x32"
+      href="./images/favicon-32x32.png"
+    />
 
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
@@ -46,66 +51,80 @@
             <figure>
               <img src="./images/icon-messages.svg" alt="messages icon" />
             </figure>
-            <p><span>2.7m+</span> <br />Messages sent</p>
+            <p>
+              <span>2.7m+</span> <br />Messages <br />
+              sent
+            </p>
           </section>
           <!-- messages sent -->
         </div>
         <!-- div communities formed and messages sent -->
-        <section class="together">
-          <div class="together_top-container">
+        <figure>
+          <img
+            src="./images/bg-section-top-mobile-1.svg"
+            alt="background-section-top"
+          />
+        </figure>
+        <div class="wrapper__bottom_container">
+          <section class="together">
+            <div class="together_top-container">
+              <figure>
+                <img
+                  src="./images/illustration-grow-together.svg"
+                  alt="illustration grow together"
+                />
+              </figure>
+            </div>
+            <div class="together_bottom-container">
+              <h2>Grow Together</h2>
+              <p>
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+          </section>
+
+          <!-- grow together -->
+          <section class="conversations">
+            <div class="conversations_top-container">
+              <figure>
+                <img
+                  src="./images/illustration-flowing-conversation.svg"
+                  alt="illustration flowing conversations"
+                />
+              </figure>
+            </div>
+            <!-- div conversations top container -->
+            <div class="conversations_bottom-container">
+              <h2>Flowing conversations</h2>
+              <p>
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+            <!-- div conversations bottom container  -->
+          </section>
+          <!-- flowing conversations -->
+          <section class="users">
             <figure>
               <img
-                src="./images/illustration-grow-together.svg"
-                alt="illustration grow together"
+                src="./images/illustration-your-users.svg"
+                alt="illustration your users"
               />
             </figure>
-          </div>
-          <div class="together_bottom-container">
+            <h2>Your Users</h2>
             <p>
-              generate meaningful discussions with your audience and build a
-              strong, loyal community. Think of the insightful conversations you
-              miss out on with a feedback form.
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
             </p>
-          </div>
-          <h2>Grow Together</h2>
-        </section>
-        <!-- grow together -->
-        <section class="conversations">
-          <div class="conversations_top-container">
-            <figure>
-              <img
-                src="./images/illustration-flowing-conversation.svg"
-                alt="illustration flowing conversations"
-              />
-            </figure>
-          </div>
-          <!-- div conversations top container -->
-          <div class="conversations_bottom-container">
-            <h2>Flowing conversations</h2>
-            <p>
-              You wouldn't paginate a conversation in real life, so why do it
-              online? Our threads have just-in-time loading for a more natural
-              flow.
-            </p>
-          </div>
-          <!-- div conversations bottom container  -->
-        </section>
-        <!-- flowing conversations -->
-        <section class="users">
-          <figure>
-            <img
-              src="./images/illustration-your-users.svg"
-              alt="illustration your users"
-            />
-          </figure>
-          <h2>Your Users</h2>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
-        </section>
-        <!-- your users -->
+          </section>
+          <!-- your users -->
+        </div>
+        <!-- wrapper bottom container -->
+
         <section class="cta">
           <h3>Ready To Build Your Community?</h3>
           <button>Get Started For Free</button>

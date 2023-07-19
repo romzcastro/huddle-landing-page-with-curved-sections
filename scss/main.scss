@@ -1,8 +1,8 @@
 @import "./resets";
 @import "./variables";
 body {
-  background-color: $neutral-color-1;
-  color: $secondary-color-1;
+  background-color: $neutral-clr-1;
+  color: $secondary-clr-1;
   font-family: $ff-base;
   height: 100vh;
   line-height: 1.5;
@@ -13,6 +13,7 @@ header {
   padding: 1.5em;
   .logo {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 7em;
   }
@@ -20,10 +21,10 @@ header {
     width: 40%;
   }
   .logo button {
-    background-color: $neutral-color-1;
-    border-color: $primary-color-2;
+    background-color: $neutral-clr-1;
+    border-color: $primary-clr-2;
     border-radius: 50em;
-    color: $primary-color-2;
+    color: $primary-clr-2;
     font-size: 0.7rem;
     padding: 0.2em;
     width: 7.8em;
@@ -40,11 +41,11 @@ header {
     padding-bottom: 3em;
   }
   .heroButton {
-    background-color: $primary-color-1;
+    background-color: $primary-clr-1;
     border: none;
     border-radius: 2em;
     box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
-    color: $secondary-color-2;
+    color: $secondary-clr-2;
     font-size: 0.75rem;
     padding: 0.8em;
     width: 15em;
@@ -52,5 +53,38 @@ header {
   }
   figure {
     padding: 0em 1.5em;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  .comm-sent__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .communities,
+    .sent {
+      width: 60%;
+      padding: 0em 0em 3em 0em;
+
+      & span {
+        color: $secondary-clr-1;
+        font-size: 4rem;
+        font-weight: map-get($fw, bold);
+      }
+      & p {
+        color: $secondary-clr-3;
+        font-size: 0.875rem;
+      }
+      & figure img {
+        width: 20%;
+        padding-left: 1em;
+      }
+    }
+  }
+  .wrapper__bottom_container {
+    background-color: $secondary-clr-2;
+    padding: 2em;
   }
 }
