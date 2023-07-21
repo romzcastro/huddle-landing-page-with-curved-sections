@@ -19,7 +19,7 @@ header {
     padding-bottom: 7em;
   }
   .logo figure {
-    width: 50%;
+    width: 70%;
   }
   .logo button {
     background-color: $neutral-clr-1;
@@ -127,7 +127,7 @@ header {
     padding: 14em 3em;
     h3 {
       font-family: $ff-accent;
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       font-weight: map-get($fw, bold);
       padding-bottom: 1.5em;
     }
@@ -210,8 +210,15 @@ footer {
     .bottomfooter__mail a {
       color: $secondary-clr-2;
       font-family: $ff-base;
+      font-size: 0.9375rem;
       font-weight: map-get($fw, regular);
       text-decoration: none;
+    }
+    & .bottomfooter__contacts,
+    .bottomfooter__mail {
+      & p {
+        font-size: 0.9375rem;
+      }
     }
     ul {
       column-gap: 1em;
