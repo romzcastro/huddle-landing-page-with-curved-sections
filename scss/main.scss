@@ -1,7 +1,7 @@
 @import "./resets";
 @import "./variables";
 body {
-  background-color: $primary-clr-4;
+  background-color: $neutral-clr-1;
   color: $secondary-clr-1;
   font-family: $ff-base;
   font-weight: map-get($fw, semi-bold);
@@ -57,7 +57,7 @@ header {
   }
 }
 .wrapper {
-  background-color: $primary-clr-4;
+  background-color: $neutral-clr-1;
   display: flex;
   flex-direction: column;
   .comm-sent__container {
@@ -95,18 +95,27 @@ header {
     & .together,
     .conversations,
     .users {
-      padding: 1.5em 2em 6em 2em;
+      padding: 1.5em 2em 14em 2em;
     }
     & figure {
       padding: 3em 1.5em;
     }
     & h2 {
+      font-family: $ff-accent;
       font-weight: map-get($fw, bold);
       font-size: 1.25rem;
       padding-bottom: 0.5em;
     }
     & p {
-      font-size: 0.875rem;
+      font-size: 0.8125rem;
+    }
+    & .conversations {
+      background-image: url(/images/bg-section-bottom-desktop-1.svg),
+        url(/images/bg-section-top-mobile-2.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain, contain;
+      background-position: top, bottom;
+      background-color: $neutral-clr-1;
     }
   }
   .cta {
@@ -115,11 +124,12 @@ header {
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: contain, contain;
-    padding: 12em 3em;
+    padding: 14em 3em;
     h3 {
-      font-size: 1.65rem;
+      font-family: $ff-accent;
+      font-size: 1.35rem;
       font-weight: map-get($fw, bold);
-      padding-bottom: 2em;
+      padding-bottom: 1.5em;
     }
     button {
       border: none;
@@ -127,7 +137,7 @@ header {
       box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
       background-color: $primary-clr-1;
       color: $secondary-clr-2;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       font-weight: map-get($fw, semi-bold);
       padding: 0.75em;
       width: 15em;
@@ -138,55 +148,87 @@ footer {
   padding: 2em;
   background-color: $secondary-clr-1;
   color: $secondary-clr-2;
-  font-weight: map-get($fw, semi-bold);
+
   text-align: left;
-  h3 {
-    font-size: 1.2rem;
-    padding-bottom: 1em;
-  }
-  p {
-    padding-bottom: 1em;
-  }
-  & .newsletter_container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 6em;
-    & input {
-      border-radius: 0.35em;
-      border: none;
-      margin-bottom: 0.75em;
-      padding: 0.65em;
-      width: 100%;
+  & .top_footer {
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1em;
     }
-    & button {
-      align-self: flex-end;
-      background-color: $primary-clr-1;
-      border-radius: 0.35em;
-      border: none;
+    p {
+      font-size: 0.875rem;
+      padding-bottom: 2em;
+    }
+    & .newsletter_container {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 6em;
+      & input {
+        border-radius: 0.35em;
+        border: none;
+        margin-bottom: 0.75em;
+        padding: 0.65em;
+        width: 100%;
+      }
+      & button {
+        align-self: flex-end;
+        background-color: $primary-clr-1;
+        border-radius: 0.35em;
+        border: none;
+        color: $primary-clr-4;
+        font-weight: map-get($fw, bold);
+        padding: 0.65em;
+        width: 11em;
+      }
+    }
+  }
+  & .bottom_footer {
+    & p {
+      font-family: $ff-base;
+      font-weight: map-get($fw, regular);
+    }
+    & figure {
+      & .huddle_logo {
+        width: 60%;
+        padding-bottom: 1em;
+      }
+    }
+    & .huddle_description {
+      line-height: 1.5em;
+      font-size: 0.875rem;
+
+      padding-bottom: 3em;
+    }
+    & .bottomfooter__contacts,
+    .bottomfooter__mail {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 1em;
+      padding-bottom: 0.75em;
+    }
+    .bottomfooter__mail a {
+      color: $secondary-clr-2;
+      font-family: $ff-base;
+      font-weight: map-get($fw, regular);
+      text-decoration: none;
+    }
+    ul {
+      column-gap: 1em;
+      display: flex;
+      margin-top: 3em;
+      justify-content: flex-start;
+      list-style: none;
+      & li {
+        width: 8%;
+      }
+    }
+  }
+  .attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    & a {
       color: $primary-clr-4;
-      font-weight: map-get($fw, bold);
-      padding: 0.65em;
-      width: 11em;
-    }
-  }
-  & .bottomfooter__contacts,
-  .bottomfooter__mail {
-    display: flex;
-    align-items: center;
-    column-gap: 1em;
-  }
-  .bottomfooter__mail a {
-    color: $secondary-clr-2;
-    text-decoration: none;
-  }
-  ul {
-    column-gap: 1em;
-    display: flex;
-    margin-top: 3em;
-    justify-content: flex-start;
-    list-style: none;
-    & li {
-      width: 8%;
     }
   }
 }
