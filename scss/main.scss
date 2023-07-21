@@ -137,7 +137,7 @@ header {
 footer {
   padding: 2em;
   background-color: $secondary-clr-1;
-  color: $primary-clr-4;
+  color: $secondary-clr-2;
   font-weight: map-get($fw, semi-bold);
   text-align: left;
   h3 {
@@ -176,7 +176,17 @@ footer {
     column-gap: 1em;
   }
   .bottomfooter__mail a {
-    color: $primary-clr-4;
+    color: $secondary-clr-2;
     text-decoration: none;
+  }
+  ul {
+    column-gap: 1em;
+    display: flex;
+    margin-top: 3em;
+    justify-content: flex-start;
+    list-style: none;
+    & li {
+      width: 8%;
+    }
   }
 }
