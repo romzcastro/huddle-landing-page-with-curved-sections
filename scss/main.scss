@@ -89,7 +89,7 @@ header {
         font-size: 0.875rem;
       }
       & figure img {
-        width: 25%;
+        width: 15%;
         // padding-left: 1em;
       }
     }
@@ -252,19 +252,25 @@ footer {
 }
 @media screen and (min-width: 48em) {
   body {
-    padding: 4em 2em;
+    padding: 3em 1em;
     font-size: 1.25rem;
   }
   header {
     &__wrapper {
-      width: 80%;
+      width: 90%;
     }
-
-    & .logo {
-      padding-bottom: 8em;
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      padding: 0em 0em 11em 0em;
+    }
+    .logo figure {
+      width: 25%;
+      justify-content: flex-start;
+      padding: 0 0 0 1em;
     }
     & .logo button {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       width: 8em;
     }
     & h1 {
@@ -290,10 +296,26 @@ footer {
       padding: 0 1em;
     }
   }
-  .wrapper {
-    .comm-sent__container {
-      display: flex;
-      flex-direction: row;
-    }
-  }
+  // .wrapper {
+  //   .comm-sent__container {
+  //     display: flex;
+  //     flex-direction: row;
+  //     & .communities,
+  //     .sent {
+  //       padding: 0;
+  //       & .communities__container {
+  //         width: 50%;
+  //       }
+  //       & .comm_main-paragraph {
+  //         color: $secondary-clr-1;
+  //         font-weight: map-get($fw, bold);
+  //         font-size: 7rem;
+  //         text-align: left;
+  //       }
+  //       & .comm_sub-paragraph {
+  //         font-size: 1.5rem;
+  //       }
+  //     }
+  //   }
+  // }
 }
