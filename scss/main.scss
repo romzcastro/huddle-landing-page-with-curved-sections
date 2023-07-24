@@ -36,7 +36,7 @@ header {
     width: 10em;
   }
   h1 {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     font-family: $ff-accent;
     font-weight: map-get($fw, bold);
     line-height: 1.5;
@@ -74,11 +74,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6.25em 2em;
+    padding-bottom: 4em;
     .communities,
     .sent {
       width: 60%;
-      padding: 0em 0em 4.5em 0em;
+      padding: 0em 0em 2em 0em;
+
       & span {
         color: $secondary-clr-1;
         font-size: 3.5rem;
@@ -89,7 +90,7 @@ header {
         font-size: 0.875rem;
       }
       & figure img {
-        width: 15%;
+        width: 25%;
         // padding-left: 1em;
       }
     }
@@ -107,7 +108,7 @@ header {
     & h2 {
       font-family: $ff-accent;
       font-weight: map-get($fw, bold);
-      font-size: 1.375rem;
+      font-size: 1.25rem;
       padding-bottom: 0.5em;
     }
     & p {
@@ -120,7 +121,6 @@ header {
       background-size: contain, contain;
       background-position: top, bottom;
       background-color: $neutral-clr-1;
-      padding: 7em 2em 14em 2em;
     }
   }
   .cta {
@@ -129,7 +129,7 @@ header {
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: contain, contain;
-    padding: 17em 3em;
+    padding: 14em 3em;
     h3 {
       font-family: $ff-accent;
       font-size: 1.5rem;
@@ -150,7 +150,7 @@ header {
   }
 }
 footer {
-  padding: 6em 2em;
+  padding: 2em;
   background-color: $secondary-clr-1;
   color: $secondary-clr-2;
 
@@ -249,73 +249,4 @@ footer {
       color: $primary-clr-4;
     }
   }
-}
-@media screen and (min-width: 48em) {
-  body {
-    padding: 3em 1em;
-    font-size: 1.25rem;
-  }
-  header {
-    &__wrapper {
-      width: 90%;
-    }
-    .logo {
-      display: flex;
-      justify-content: space-between;
-      padding: 0em 0em 11em 0em;
-    }
-    .logo figure {
-      width: 25%;
-      justify-content: flex-start;
-      padding: 0 0 0 1em;
-    }
-    & .logo button {
-      font-size: 1.1rem;
-      width: 8em;
-    }
-    & h1 {
-      font-size: 3rem;
-      padding-bottom: 0.5em;
-    }
-    & p {
-      color: $secondary-clr-3;
-      margin: 0 auto;
-      font-size: 1.25rem;
-      width: 55ch;
-      padding-bottom: 2em;
-    }
-    & .heroButton {
-      font-size: 1.25rem;
-      padding: 1.1em;
-      width: 19em;
-      margin-bottom: 6em;
-    }
-    figure {
-      display: flex;
-      justify-content: center;
-      padding: 0 1em;
-    }
-  }
-  // .wrapper {
-  //   .comm-sent__container {
-  //     display: flex;
-  //     flex-direction: row;
-  //     & .communities,
-  //     .sent {
-  //       padding: 0;
-  //       & .communities__container {
-  //         width: 50%;
-  //       }
-  //       & .comm_main-paragraph {
-  //         color: $secondary-clr-1;
-  //         font-weight: map-get($fw, bold);
-  //         font-size: 7rem;
-  //         text-align: left;
-  //       }
-  //       & .comm_sub-paragraph {
-  //         font-size: 1.5rem;
-  //       }
-  //     }
-  //   }
-  // }
 }
