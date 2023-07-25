@@ -1,13 +1,10 @@
 @import "./resets";
 @import "./variables";
 body {
-  button {
-    cursor: pointer;
-  }
   background-color: $neutral-clr-1;
   color: $secondary-clr-1;
   font-family: $ff-base;
-  font-weight: map-get($fw, semi-bold);
+  font-weight: $fw-600;
   height: 100vh;
   line-height: 1.5;
   text-align: center;
@@ -22,7 +19,7 @@ header {
     padding-bottom: 7em;
   }
   .logo figure {
-    width: 45%;
+    width: 30%;
   }
   .logo button {
     background-color: $neutral-clr-1;
@@ -31,22 +28,22 @@ header {
     border: 2px solid $primary-clr-2;
     border-radius: 2em;
     color: $primary-clr-2;
-    font-size: 0.65rem;
-    padding: 0.35em;
+    font-size: 0.5rem;
+    padding: 0.5em;
     width: 10em;
   }
   h1 {
     font-size: 1.5rem;
     font-family: $ff-accent;
-    font-weight: map-get($fw, bold);
+    font-weight: $fw-700;
     line-height: 1.5;
     padding-bottom: 1em;
   }
-  p {
+  .hero__description {
     font-size: 0.875rem;
     padding-bottom: 3em;
   }
-  .heroButton {
+  .hero__button {
     background-color: $primary-clr-1;
     border: none;
     border-radius: 2em;
@@ -57,46 +54,45 @@ header {
     width: 15em;
     margin-bottom: 9em;
   }
-  figure {
-    padding: 0em 1.5em;
+  .mockups {
+    padding-bottom: 7em;
   }
-}
-.wrapper {
-  background-color: $neutral-clr-1;
-  display: flex;
-  flex-direction: column;
-  .comm-sent__container {
-    background-image: url(/images/bg-section-top-mobile-1.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
+  .hero__huddle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 4em;
-    .communities,
+    & .communities,
     .sent {
-      width: 60%;
-      padding: 0em 0em 2em 0em;
-
+      min-width: 50%;
+      text-align: left;
       & span {
         color: $secondary-clr-1;
         font-size: 3.5rem;
-        font-weight: map-get($fw, bold);
+        font-weight: $fw-700;
       }
       & p {
         color: $secondary-clr-3;
         font-size: 0.875rem;
+        text-align: center;
+        padding-bottom: 7em;
       }
       & figure img {
-        width: 25%;
-        // padding-left: 1em;
+        width: 15%;
       }
     }
   }
-  .wrapper__bottom_container {
+  background-image: url(/images/bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.wrapper {
+  background-color: $secondary-clr-2;
+  .wrapper__bottom-container {
     background-color: $secondary-clr-2;
+    padding: 1em;
     & .together,
     .conversations,
     .users {
@@ -107,12 +103,13 @@ header {
     }
     & h2 {
       font-family: $ff-accent;
-      font-weight: map-get($fw, bold);
+      font-weight: $fw-700;
       font-size: 1.25rem;
       padding-bottom: 0.5em;
     }
     & p {
       font-size: 0.8125rem;
+      font-weight: $fw-600;
     }
     & .conversations {
       background-image: url(/images/bg-section-bottom-desktop-1.svg),
@@ -133,7 +130,7 @@ header {
     h3 {
       font-family: $ff-accent;
       font-size: 1.5rem;
-      font-weight: map-get($fw, bold);
+      font-weight: $fw-700;
       padding-bottom: 1.5em;
     }
     button {
@@ -143,7 +140,7 @@ header {
       background-color: $primary-clr-1;
       color: $secondary-clr-2;
       font-size: 0.75rem;
-      font-weight: map-get($fw, semi-bold);
+      font-weight: $fw-600;
       padding: 0.75em;
       width: 15em;
     }
@@ -181,7 +178,7 @@ footer {
         border-radius: 0.35em;
         border: none;
         color: $primary-clr-4;
-        font-weight: map-get($fw, bold);
+        font-weight: $fw-700;
         padding: 0.65em;
         width: 11em;
       }
@@ -190,7 +187,7 @@ footer {
   & .bottom_footer {
     & p {
       font-family: $ff-base;
-      font-weight: map-get($fw, regular);
+      font-weight: $fw-600;
     }
     & figure {
       width: 65%;
@@ -216,7 +213,7 @@ footer {
       color: $secondary-clr-2;
       font-family: $ff-base;
       font-size: 0.9375rem;
-      font-weight: map-get($fw, regular);
+      font-weight: $fw-600;
       text-decoration: none;
     }
     & .bottomfooter__contacts,
@@ -247,6 +244,59 @@ footer {
     text-align: center;
     & a {
       color: $primary-clr-4;
+    }
+  }
+}
+@media screen and (min-width: 48em) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 13em;
+    }
+
+    .logo button {
+      background-color: $neutral-clr-1;
+      border-color: $primary-clr-2;
+      border: none;
+      border: 2px solid $primary-clr-2;
+      border-radius: 2em;
+      color: $primary-clr-2;
+      font-size: 1rem;
+      font-weight: $fw-600;
+      padding: 0.4em;
+      width: 8.5em;
+    }
+    .hero {
+      margin: 0 auto;
+      max-width: 64em;
+      h1 {
+        font-size: 3rem;
+        padding-bottom: 0.35em;
+      }
+      .hero__description {
+        font-size: 1.25rem;
+        font-weight: $fw-600;
+        margin: 0 auto;
+        width: 54ch;
+      }
+      .hero__button {
+        border-radius: 4em;
+        color: $secondary-clr-2;
+        font-size: 1.25rem;
+        font-weight: $fw-600;
+        width: 20em;
+        padding: 1em;
+        margin-bottom: 5em;
+      }
+    }
+    .hero__huddle {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
