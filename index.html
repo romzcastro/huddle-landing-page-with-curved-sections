@@ -152,8 +152,16 @@
             newsletter. We'll send you spam or pass on your email address
           </p>
           <div class="newsletter_container">
-            <input type="email" name="email" required placeholder="" />
-            <button class="footerButton">Subscribe</button>
+            <form onsubmit="return validateForm()" method="post">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder=""
+              />
+              <button class="footerButton">Subscribe</button>
+            </form>
           </div>
           <!-- div newsletter container -->
         </section>
@@ -221,5 +229,6 @@
         >. Coded by <a href="#">Jerome Castro</a>.
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
