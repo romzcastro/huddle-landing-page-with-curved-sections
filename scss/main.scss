@@ -57,7 +57,7 @@ header {
   .mockups {
     padding-bottom: 7em;
   }
-  .hero__huddle {
+  .hero__feature {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +90,7 @@ header {
 
 .wrapper {
   background-color: $secondary-clr-2;
-  .wrapper__bottom-container {
+  .wrapper__container {
     background-color: $secondary-clr-2;
     padding: 1em;
     & .together,
@@ -152,7 +152,7 @@ footer {
   color: $secondary-clr-2;
 
   text-align: left;
-  & .top_footer {
+  & .footer__top {
     h3 {
       font-size: 1.2rem;
       padding-bottom: 1em;
@@ -184,7 +184,7 @@ footer {
       }
     }
   }
-  & .bottom_footer {
+  & .footer__bottom {
     & p {
       font-family: $ff-base;
       font-weight: $fw-600;
@@ -251,7 +251,11 @@ footer {
   header {
     display: flex;
     flex-direction: column;
-    padding: 3em;
+    background-image: url(/images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: 3em 3em 20em 3em;
     .logo {
       display: flex;
       align-items: center;
@@ -294,9 +298,120 @@ footer {
         margin-bottom: 5em;
       }
     }
-    .hero__huddle {
+
+    .hero__feature {
       display: flex;
       flex-direction: row;
+      & .communities,
+      .sent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        & figure img {
+          width: 20%;
+        }
+        & span {
+          font-size: 6rem;
+        }
+        & p {
+          font-size: 1.25rem;
+          padding-bottom: 0;
+        }
+        & .communities__container {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        }
+      }
     }
+  }
+  .wrapper {
+    .wrapper__container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      & .together,
+      .conversations,
+      .users {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 1em 3em 1em 3em;
+      }
+      & .together {
+        justify-content: space-evenly;
+        text-align: left;
+        // padding: 3em;
+        & .together_top-container {
+          flex: 2 0;
+          max-width: 40%;
+        }
+        & .together_bottom-container {
+          flex: 2 0;
+          max-width: 40%;
+        }
+      }
+      & .conversations {
+        background-image: url(/images/bg-section-bottom-desktop-2.svg),
+          url(/images/bg-section-top-desktop-2.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
+        justify-content: space-evenly;
+        text-align: left;
+        flex-direction: row;
+        padding: 12em 3em;
+
+        & .conversations_top-container {
+          flex: 2 0;
+          max-width: 48%;
+        }
+        & .conversations_bottom-container {
+          flex: 2 0;
+          max-width: 42%;
+        }
+      }
+      & .users {
+        justify-content: space-evenly;
+        text-align: left;
+        flex-direction: row-reverse;
+        padding: 12em 3em;
+
+        & .users_top-container {
+          flex: 2 0;
+          max-width: 43%;
+        }
+        & .users_bottom-container {
+          flex: 2 0;
+          max-width: 43%;
+        }
+      }
+      & h2 {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1rem;
+      }
+    }
+    .cta {
+      background-image: url(/images/bg-footer-top-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      padding: 3em 3em 25em 3em;
+      & h3 {
+        font-size: 2.5rem;
+        font-weight: $fw-700;
+      }
+      & button {
+        font-size: 1.25rem;
+        padding: 1em;
+        width: 20em;
+      }
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
