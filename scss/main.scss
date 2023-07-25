@@ -260,7 +260,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-bottom: 13em;
+      padding-bottom: 14em;
     }
 
     .logo button {
@@ -417,7 +417,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    padding: 7em 0em;
+    padding: 7em 3em;
     & .footer__top,
     .footer__bottom {
       display: flex;
@@ -435,9 +435,9 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        column-gap: 1em;
+        column-gap: 2em;
         & input {
-          width: 19em;
+          width: 21em;
           margin-bottom: 0;
         }
       }
@@ -481,6 +481,14 @@ footer {
           width: 6%;
         }
       }
+    }
+  }
+  .attrib {
+    padding: 1em;
+    font-size: 0.6875rem;
+    text-align: center;
+    & a {
+      color: $primary-clr-4;
     }
   }
 }
