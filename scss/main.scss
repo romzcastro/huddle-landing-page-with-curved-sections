@@ -248,6 +248,13 @@ footer {
   }
 }
 @media screen and (min-width: 48em) {
+  [data-alttext] > span,
+  .text-before {
+    display: none;
+  }
+  [data-alttext]::before {
+    content: attr(data-alttext);
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -444,12 +451,20 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        column-gap: 2em;
+        column-gap: 1em;
         position: relative;
         & input {
-          width: 150%;
-          min-width: 20em;
+          flex: 2 0;
           margin-bottom: 0;
+        }
+        & input:valid {
+          border: 1px solid green;
+          border-color: green;
+        }
+        & input:invalid {
+          border: 1px solid red;
+          border-color: red;
+        }
         }
 
         & #error-msg {
@@ -458,8 +473,7 @@ footer {
           top: 120%;
         }
         & button {
-          width: 100%;
-          min-width: 10em;
+          flex: 1 0;
           &:hover {
             cursor: pointer;
             background-color: $primary-clr-2;
