@@ -457,15 +457,6 @@ footer {
           flex: 2 0;
           margin-bottom: 0;
         }
-        & input:valid {
-          border: 1px solid green;
-          border-color: green;
-        }
-        & input:invalid {
-          border: 1px solid red;
-          border-color: red;
-        }
-        }
 
         & #error-msg {
           color: red;
