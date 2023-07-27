@@ -447,7 +447,8 @@ footer {
         column-gap: 2em;
         position: relative;
         & input {
-          width: 20em;
+          width: 150%;
+          min-width: 20em;
           margin-bottom: 0;
         }
 
@@ -456,9 +457,13 @@ footer {
           position: absolute;
           top: 120%;
         }
-        & button:hover {
-          cursor: pointer;
-          background-color: $primary-clr-2;
+        & button {
+          width: 100%;
+          min-width: 10em;
+          & button:hover {
+            cursor: pointer;
+            background-color: $primary-clr-2;
+          }
         }
       }
     }
