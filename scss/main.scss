@@ -460,7 +460,7 @@ footer {
         & button {
           width: 100%;
           min-width: 10em;
-          & button:hover {
+          &:hover {
             cursor: pointer;
             background-color: $primary-clr-2;
           }
