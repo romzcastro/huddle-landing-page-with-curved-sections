@@ -82,7 +82,7 @@ header {
       }
     }
   }
-  background-image: url(./images/bg-section-top-mobile-1.svg);
+  background-image: url(../images/bg-section-top-mobile-1.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -112,8 +112,8 @@ header {
       font-weight: $fw-600;
     }
     & .conversations {
-      background-image: url(./images/bg-section-bottom-desktop-1.svg),
-        url(./images/bg-section-top-mobile-2.svg);
+      background-image: url(../images/bg-section-bottom-desktop-1.svg),
+        url(../images/bg-section-top-mobile-2.svg);
       background-repeat: no-repeat, no-repeat;
       background-size: contain, contain;
       background-position: top, bottom;
@@ -121,8 +121,8 @@ header {
     }
   }
   .cta {
-    background-image: url(./images/bg-section-bottom-mobile-2.svg),
-      url(./images/bg-footer-top-mobile.svg);
+    background-image: url(../images/bg-section-bottom-mobile-2.svg),
+      url(../images/bg-footer-top-mobile.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: contain, contain;
@@ -258,7 +258,7 @@ footer {
   header {
     display: flex;
     flex-direction: column;
-    background-image: url(./images/bg-section-top-desktop-1.svg);
+    background-image: url(../images/bg-section-top-desktop-1.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -364,8 +364,8 @@ footer {
         }
       }
       & .conversations {
-        background-image: url(./images/bg-section-bottom-desktop-2.svg),
-          url(./images/bg-section-top-desktop-2.svg);
+        background-image: url(../images/bg-section-bottom-desktop-2.svg),
+          url(../images/bg-section-top-desktop-2.svg);
         background-repeat: no-repeat, no-repeat;
         background-position: top, bottom;
         justify-content: space-evenly;
@@ -405,8 +405,8 @@ footer {
       }
     }
     .cta {
-      background-image: url(./images/bg-footer-top-desktop.svg),
-        url(./images/bg-section-bottom-desktop-2.svg);
+      background-image: url(../images/bg-footer-top-desktop.svg),
+        url(../images/bg-section-bottom-desktop-2.svg);
       background-repeat: no-repeat, no-repeat;
       background-position: bottom, top;
       background-size: contain, contain;
